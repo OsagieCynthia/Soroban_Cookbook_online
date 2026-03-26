@@ -33,6 +33,17 @@ const sidebars: SidebarsConfig = {
       label: 'Patterns',
       items: [
         'patterns/overview',
+        'patterns/hello-world',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Design System',
+      items: [
+        'design-system/buttons',
+        'design-system/typography',
+        'design-system/badges-tags',
+        'design-system/empty-states',
       ],
     },
     {
