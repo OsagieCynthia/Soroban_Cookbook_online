@@ -1,7 +1,7 @@
 import React from 'react';
 import clsx from 'clsx';
 import styles from './PatternDoc.module.css';
-import { Badge, Tag } from '../Badge';
+import { Badge } from '../Badge';
 import type { BadgeDifficulty, BadgeStatus, TagCategory } from '../Badge';
 
 export type PatternMetaProps = {

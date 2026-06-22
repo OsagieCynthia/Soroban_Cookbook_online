@@ -5,6 +5,9 @@ description: Practical patterns for authorization, roles, and capability boundar
 image: /img/soroban-social-card.png
 ---
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 <PatternMeta
   slug="authorization-and-access-control"
   difficulty="intermediate"
@@ -88,7 +91,7 @@ This pattern fails if initialization is incorrect, or if other methods forget th
 
   </TabItem>
 
-  <TabItem value="contract" label="Contract (Secure)" >
+  <TabItem value="secure" label="Contract (Secure)" >
 
 #### Secure: explicit role mapping and `require_auth()`
 
@@ -125,10 +128,15 @@ impl AccessControl {
 }
 ```
 
+<div>
+
 Key points:
+
 - Use `Address::require_auth()` to assert caller identity.
 - Keep mapping keys explicit and minimal (`owner`, `admin`, or a small role map).
 - Prefer dedicated setter methods guarded by the highest privilege.
+
+</div>
 
   </TabItem>
 

@@ -768,7 +768,7 @@ Before asking for help, verify:
 
 ### 🔗 Related Resources
 
-- [Error Handling in Soroban](./error-handling.md) - Detailed error patterns
+- [Error Handling in Soroban](../concepts/error-handling.md) - Detailed error patterns
 - [Testing Error Scenarios](./testing-errors.md) - Comprehensive error testing
 - [Soroban Documentation](https://developers.stellar.org/soroban) - Official docs
 - [Rust Book](https://doc.rust-lang.org/book/) - Rust fundamentals

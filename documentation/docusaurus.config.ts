@@ -15,7 +15,7 @@ const config: Config = {
   baseUrl: '/',
 
   organizationName: 'Soroban-Cookbook',
-  projectName: 'Soroban-Cookbook-',
+  projectName: 'Soroban_Cookbook_online',
 
   customFields: {
     /** POST endpoint accepting JSON `{ "email": string }`. Set via env at build time for real integrations. */
@@ -142,7 +142,7 @@ const config: Config = {
         docs: {
           sidebarPath: './sidebars.ts',
           routeBasePath: '/docs',
-          editUrl: 'https://github.com/Soroban-Cookbook/Soroban-Cookbook-/tree/main/documentation/',
+          editUrl: 'https://github.com/Soroban-Cookbook/Soroban_Cookbook_online/tree/main/documentation/',
         },
         blog: false,
         theme: {
@@ -179,7 +179,7 @@ const config: Config = {
           label: 'Docs',
         },
         {
-          href: 'https://github.com/Soroban-Cookbook/Soroban-Cookbook-',
+          href: 'https://github.com/Soroban-Cookbook/Soroban_Cookbook_online',
           label: 'GitHub',
           position: 'right',
         },
@@ -219,7 +219,7 @@ const config: Config = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/Soroban-Cookbook/Soroban-Cookbook-',
+              href: 'https://github.com/Soroban-Cookbook/Soroban_Cookbook_online',
             },
           ],
         },

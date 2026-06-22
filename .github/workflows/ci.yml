@@ -32,7 +32,7 @@ jobs:
       - name: Setup Bun
         uses: oven-sh/setup-bun@v1
         with:
-          bun-version: latest
+          bun-version: "1.2.0"
 
       - name: Cache Bun dependencies
         uses: actions/cache@v4
@@ -64,7 +64,7 @@ jobs:
       - name: Setup Bun
         uses: oven-sh/setup-bun@v1
         with:
-          bun-version: latest
+          bun-version: "1.2.0"
 
       - name: Cache Bun dependencies
         uses: actions/cache@v4
@@ -93,7 +93,7 @@ jobs:
       - name: Setup Bun
         uses: oven-sh/setup-bun@v1
         with:
-          bun-version: latest
+          bun-version: "1.2.0"
 
       - name: Cache Bun dependencies
         uses: actions/cache@v4
@@ -150,7 +150,7 @@ jobs:
       - name: Setup Bun
         uses: oven-sh/setup-bun@v1
         with:
-          bun-version: latest
+          bun-version: "1.2.0"
 
       - name: Check lockfile exists
         run: |

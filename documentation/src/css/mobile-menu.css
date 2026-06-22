@@ -16,7 +16,6 @@
 
 /* ── Only apply below the desktop breakpoint ─────────────────────────────── */
 @media (max-width: 996px) {
-
   /* ── 1. Hamburger toggle — minimum 44 × 44 px touch target ─────────────── */
   .navbar__toggle {
     min-width: 44px;
@@ -39,7 +38,8 @@
   .navbar-sidebar {
     transform: translateX(-100%);
     transition:
-      transform var(--sb-motion-duration-slow, 320ms) var(--sb-motion-ease-out, cubic-bezier(0, 0, 0.2, 1)),
+      transform var(--sb-motion-duration-slow, 320ms)
+        var(--sb-motion-ease-out, cubic-bezier(0, 0, 0.2, 1)),
       visibility var(--sb-motion-duration-slow, 320ms) step-end;
     visibility: hidden;
     will-change: transform;
@@ -50,7 +50,8 @@
   .navbar-sidebar--show {
     transform: translateX(0);
     transition:
-      transform var(--sb-motion-duration-slow, 320ms) var(--sb-motion-ease-out, cubic-bezier(0, 0, 0.2, 1)),
+      transform var(--sb-motion-duration-slow, 320ms)
+        var(--sb-motion-ease-out, cubic-bezier(0, 0, 0.2, 1)),
       visibility var(--sb-motion-duration-slow, 320ms) step-start;
     visibility: visible;
   }
@@ -62,7 +63,8 @@
     background-color: rgba(0, 0, 0, 0.5);
     z-index: var(--z-modal-backdrop, 400);
     opacity: 0;
-    transition: opacity var(--sb-motion-duration-slow, 320ms) var(--sb-motion-ease-out, cubic-bezier(0, 0, 0.2, 1));
+    transition: opacity var(--sb-motion-duration-slow, 320ms)
+      var(--sb-motion-ease-out, cubic-bezier(0, 0, 0.2, 1));
     pointer-events: none;
   }
 

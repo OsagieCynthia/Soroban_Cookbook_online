@@ -1,6 +1,6 @@
 {
-  "buildCommand": "cd documentation && npm install && npm run build",
+  "buildCommand": "cd documentation && bun install --frozen-lockfile && bun run build",
   "outputDirectory": "documentation/build",
-  "devCommand": "cd documentation && npm start",
-  "installCommand": "cd documentation && npm install"
+  "devCommand": "cd documentation && bun start",
+  "installCommand": "cd documentation && bun install --frozen-lockfile"
 }

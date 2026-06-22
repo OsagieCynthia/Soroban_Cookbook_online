@@ -1,5 +1,5 @@
 #![no_std]
-use soroban_sdk::{contract, contractimpl, contracttype, Env, Address};
+use soroban_sdk::{contract, contracterror, contractimpl, contracttype, Address, Env};
 
 #[contracttype]
 #[derive(Clone)]
@@ -7,8 +7,9 @@ pub enum DataKey {
     Balance(Address),
 }
 
-#[derive(Debug, PartialEq)]
-#[contracttype]
+#[contracterror]
+#[derive(Copy, Clone, Debug, Eq, PartialEq, PartialOrd, Ord)]
+#[repr(u32)]
 pub enum Error {
     InsufficientBalance = 1,
     InvalidAmount = 2,

@@ -1,5 +1,4 @@
 import React from 'react';
-import styles from './OptimizedImage.module.css';
 
 interface OptimizedImageProps {
   src: string;
@@ -22,7 +21,7 @@ export default function OptimizedImage({
 }: OptimizedImageProps) {
   // Generate WebP version of the image
   const webpSrc = src.replace(/\.(jpg|jpeg|png)$/i, '.webp');
-  
+
   return (
     <picture className={className}>
       <source srcSet={webpSrc} type="image/webp" />
